@@ -1,4 +1,4 @@
-package exe_produto;
+package Exercicios.exe_produto;
 /* Ter Três produtos no catalogo.
              * Pedir nome do produto Ok
              * Verificar se temos o produto ok
