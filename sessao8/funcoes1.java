@@ -12,7 +12,14 @@ package sessao8;
  * Sitaze básica: consiste em um cabeçalho que incui o tipo de retorno(Void para sem retorno)  eo corpo da fuinção, onde o código é executado;
  * chamando a função: a função é invocada pelo nome, e o código dentro dela é executado sempre que chamada;
  */
-
+/*
+ * Uso do return em Funções
+ * Uma instrução que finlaiza a execução de uma função e opcionalmente, devolve um valor ao ponto onde a função foi chamada;
+ * Finalização de função: quando o return é executado, a função para de executar, e o controle é devolvio ao chamador;
+ * Tipo de Retorno: o return pode retornar valores de qualquer tipo, incluindo tipos primitivos, objetivos, ou nengum valor(void);
+ * O returno permite que funções realizem cálculos ou operações e enviem o resultao de volta para ser utilizado em outras partes do programa;
+ * 
+ */
 public class funcoes1 {
     public static void main(String[] args) {
         
@@ -20,7 +27,20 @@ public class funcoes1 {
         saudacao();
         saudacao();
         saudacao();
-      
+       
+         // 2 - parâmetros
+        soma(2, 4); /* usando função da pra fazer várias somas ou qualquer outra coisa deixando o código mais limpo e organizado.  */
+        soma(5, 4);
+        soma(12, 4);
+        soma(158, 4);
+        soma(3 , 5);
+        soma(10, 20);
+        saudar("Bruno Leal");
+        dobrar(4);
+        int numero = 10;
+        int numeroDobrado = dobrar(numero); // chamando a função dobrar com o número 10
+        System.out.println("O número " + numero + " dobrado é: " + numeroDobrado);
+        
     }
 
     //Nivel de acesso, STATIC=> Não preciso instanciar classe para executar, void (tipo de retorno).
@@ -30,6 +50,22 @@ public class funcoes1 {
         System.out.println("essa é minha primeira função.");
 
     }
+
+    public static void soma(int a , int b) { //Int a + int B são os argumentos
+        int resultado = a + b; // função
+        System.out.println("O resultado da soma é: " + resultado ); 
+
+    }
+      public static void saudar (String nome) {
+        System.out.println("Ola," + nome + ", Tudo bem? ");
+
+    }
+      public static int dobrar (int n) {
+        return n * 5;
+
+    }
+    
+   
         
     }
    
