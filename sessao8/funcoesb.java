@@ -1,10 +1,14 @@
+package sessao8;
 
+/**
+ * FunçõesB.java
+ *
+ * Este arquivo contém exemplos de funções em Java, incluindo o uso de estruturas de controle if/else e switch.
+ * As funções demonstram como tomar decisões complexas e organizar o código de forma modular.
+ */
 
-
-public class funcoesb{
-
-public class FuncoesB {
-  
+public class funcoesb {         
+    
     public static void main(String[] args) {
           
                /* FUNÇÔES COM IF?ELSE E CONICIONAIS COMPLEXAS
@@ -23,6 +27,10 @@ public class FuncoesB {
                 
                  //funçai com Switch
              System.out.println(obterDiaDaSemana(5));
+
+                 // 7 system exit
+                 verificarAutenticação("admin" ,  "senhaSegura");
+                 System.out.println("oi");
             }
                       //funçai com Switch
                
@@ -67,5 +75,22 @@ public class FuncoesB {
                     return "Dia inválido. Por favor, insira um número de 1 a 7.";
             }
         }
+
+        /*  Funções com System.exit
+         * Ométodo System.exit(int status) encerra imediatamente a execução do programa, Finalizando todas as operações em andamento;
+         * o Argumento in status indica o estado de termino do programa, um valor de 0 geralmente indica uma saída bem-sucedida, enquanto valores diferentes de 0 indicam erros;
+         * Como o System.eit termina o programa abruptamente, deve ser usado com cuidado, normalmente em situalções de erro crítico ou quando não há mais naad a ser feito;
+         * CASOS DE USO:
+         * Tratamento de erro: em cenários onde o programa não pode continuar devido a um erro crítico;
+         * interrupção controlada: quano o programa atinge um estado em que deve ser encerrado imediatamente, como após confirmar a saída do usuário;
+         */
+
+         public static void verificarAutenticação ( String usuario, String senha) {
+            if(!usuario.equals("admin") && !senha.equals("senhaSegura")) {
+                System.out.println("Autenticação Falhou!");
+                System.exit(1);
+            }
+            System.out.println("Autenticação bem-sucedida!");
+         }
+         /* */
     }
-}
