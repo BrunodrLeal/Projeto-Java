@@ -1,16 +1,18 @@
 package sessao8;
 
-/* um bloco de código que realiza uma tarefa específica e pode ser chamado para ser executada;
- * Divide o cóigo em partes menores, tornando-o mais organizado e fácil de manter;
- * permite reutilizar em diferentes partes do programa sem prcisar rescrever as mesmas instruções; (boa prática de programação);
- * parâmetros e retorno: pode receber dados de entrada(parâmetos) e retornar um resultado após a execução;
- * As variáveis declaradas dentro de uma função são locais e não afetam o restante do programa;
+/* Oque é uma função?
+ * um bloco de código que realiza uma tarefa específica e pode e chamado para ser executada;
+ * Divideo cóigo em partes menores, tornando-o mais organizao e fácil de manter;
+ * Permite reutilizar código em diferentes partes do programa sem precisar reescrever a mesmas intruções;
+ * Parâmentros e Retorno: Pode receber dados de entrada (parâmetros) e retornar um resultado após a execução;
+ * As variaáveis declaradas dentro de uma função são locais e não afetam o retante do programa;
  */
+ 
 /* Criando a primeira função
- * Normalmente uma finção em java é definida com um tipo de retorno, um nome e pode ou não receber parâmetros;
- * a função pode ser cirada sem parâmentros e sem retorno, idela para tarefas simples que não requerem entra ou saída;
- * Sitaze básica: consiste em um cabeçalho que incui o tipo de retorno(Void para sem retorno)  eo corpo da fuinção, onde o código é executado;
- * chamando a função: a função é invocada pelo nome, e o código dentro dela é executado sempre que chamada;
+ * Normalmente uma função em java é definida com um tipo de retorno, um nome e pode ou não receber parâmetros;
+ * A função pode ser criada sem parâmentros e sem retorno, ideal para tarefas simples que não requerem entrada ou saída;
+ * Sitaxe básica: Consiste em um cabeçalho que incui o tipo de retorno (Void para sem retorno) e o corpo da função, onde o código é executado;
+ * Chamando a função: A função é invocada pelo seu nome, e o código dentro dela é executado sempre que chamada;
  */
 /*
  * Uso do return em Funções
@@ -24,11 +26,13 @@ public class funcoes1 {
     public static void main(String[] args) {
         
         // primeiro exemplo de função]
+        /* Tanto função como variáveis, a gente nomeia */
+        saudacao(); /* é assim que se chama a função a ser executada. */
         saudacao();
         saudacao();
-        saudacao();
-       
-         // 2 - parâmetros
+
+         /*Nivel de acesso, stativ => não preciso intanciar classe para executar, void é o tipo de retorno */        
+         // 2 - parâmetros Sistaxe: Nome, os parenteses ( ARGUMENTOS), BOLOCO {}
         soma(2, 4); /* usando função da pra fazer várias somas ou qualquer outra coisa deixando o código mais limpo e organizado.  */
         soma(5, 4);
         soma(12, 4);
@@ -74,30 +78,30 @@ public class funcoes1 {
         return n * 5;
 
     }
-    /* Funções com X sem retorno.
-     * Fonções com retorno:
-     * 1 - Permitem que uma oepração seja realizada e seu resultado seja utilizado em outras partes do programa;
-     * 2 -  Cálculos, validções, e operações que produzem um resultado necessário para outras funções ou partes do código;
-     * 3 -  Exemplo: Calcular a soma de ddois números e retonar o resultado para ser exibido ou usado em outo cálculo;
-     */
-    /* Funções sem rotorno
-     * 1 - Executam uma ação sem precisar devolver um resultado, idela para tarefas como exibição de dados ou alterações iretas no estado do programa;
-     * 2 - Exibir mensagens, Modificar váriave globais, ou realizar operações que não requerem um retorno
-     * 3 -  Exemplo: exibir uma mensagem de boas vindas ou atualizar o valor de uma variável de controle;
-     */
+        /* Funções com X sem retorno.
+        * Fonções com retorno:
+        * 1 - Permitem que uma oepração seja realizada e seu resultado seja utilizado em outras partes do programa;
+        * 2 -  Cálculos, validções, e operações que produzem um resultado necessário para outras funções ou partes do código;
+        * 3 -  Exemplo: Calcular a soma de ddois números e retonar o resultado para ser exibido ou usado em outo cálculo;
+        */
+        /* Funções sem rotorno
+        * 1 - Executam uma ação sem precisar devolver um resultado, idela para tarefas como exibição de dados ou alterações iretas no estado do programa;
+        * 2 - Exibir mensagens, Modificar váriave globais, ou realizar operações que não requerem um retorno
+        * 3 -  Exemplo: exibir uma mensagem de boas vindas ou atualizar o valor de uma variável de controle;
+        */
 
       /*  ENCAPSULAMENTO RETORNO EM VARIÁVEL  
-                     * O processo de armazenar o resultado de uma função em uma variável para uso posterior;
-                     * Permite reutilizar o valor retornado por uma função em várias partes do código, aumentando a modularidade e a legibilidade;
-                     * Uso Comun: Armazenar resultados de cálculos, verificações  ou operações complexas para evitar á mensa função;
-                     * Encapsular o retorno em uma variável pode ajudar a Simplificar o cóigo e reduzir a necessidade de executar novamente a função;
-                    */
+        * O processo de armazenar o resultado de uma função em uma variável para uso posterior;
+        * Permite reutilizar o valor retornado por uma função em várias partes do código, aumentando a modularidade e a legibilidade;
+        * Uso Comun: Armazenar resultados de cálculos, verificações  ou operações complexas para evitar á mensa função;
+        * Encapsular o retorno em uma variável pode ajudar a Simplificar o cóigo e reduzir a necessidade de executar novamente a função;
+      */
 
        public static String verificarPar (int n) {
             if (n % 2 == 0 ) {
                 return "o Numero " + n + " é par.";
             } else {
-                return "O numero " + n + " é impar.";
+                return "O numero " + n + " é impar.";  
             }
        }   
        // Exemplos de encapsulamentos e retornos em variáveis

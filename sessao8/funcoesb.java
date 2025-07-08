@@ -1,11 +1,6 @@
 package sessao8;
 
-/**
- * FunçõesB.java
- *
- * Este arquivo contém exemplos de funções em Java, incluindo o uso de estruturas de controle if/else e switch.
- * As funções demonstram como tomar decisões complexas e organizar o código de forma modular.
- */
+
 
 public class funcoesb {         
     
@@ -31,6 +26,7 @@ public class funcoesb {
                  // 7 system exit
                  verificarAutenticação("admin" ,  "senhaSegura");
                  System.out.println("oi");
+                 System.out.println(calcularMedia(5, 6, 7));
             }
                       //funçai com Switch
                
@@ -77,7 +73,7 @@ public class funcoesb {
         }
 
         /*  Funções com System.exit
-         * Ométodo System.exit(int status) encerra imediatamente a execução do programa, Finalizando todas as operações em andamento;
+         * O método System.exit(int status) encerra imediatamente a execução do programa, Finalizando todas as operações em andamento;
          * o Argumento in status indica o estado de termino do programa, um valor de 0 geralmente indica uma saída bem-sucedida, enquanto valores diferentes de 0 indicam erros;
          * Como o System.eit termina o programa abruptamente, deve ser usado com cuidado, normalmente em situalções de erro crítico ou quando não há mais naad a ser feito;
          * CASOS DE USO:
@@ -91,6 +87,23 @@ public class funcoesb {
                 System.exit(1);
             }
             System.out.println("Autenticação bem-sucedida!");
+
          }
-         /* */
+         
+         /* 8- Documentação Funções
+          * Oque é Documentação de Função:
+          * Fornece informações etalhadas sobre oque a função faz, seus parâmentos, valor de retorno , e outros detalhes relevantes;
+          * Utiliza o formato JAVADOC  para gerar documentação automática e legível, que pode ser visualizada em IE e ferramentas de ocumentação;
+          * Facilita a compreensão e manutenção do código, especialemtne em projetos colaborativos ou de Grande escala;
+          ** Componetes da Documentação:
+          * Descrição geral: Explica o propósito da função e o que ela faz;
+          * Parâmetros: @param: Descreve os parâmetros de entrada, Incluindo seus tipos e o que representam
+          * Valor de Retorno: @return: Descreve o que a função retorna, se aplicavel;
+          * Exceções @throws: Inica quais Excessões a função pode Lançar, se houver;
+          */
+          public static double calcularMedia(int num1, int num2, int num3) {
+            return ( num1 + num2 + num3) / 3.0;
+          } 
+         
     }
+    
