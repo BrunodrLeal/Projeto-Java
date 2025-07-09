@@ -1,27 +1,45 @@
 package sessao8;
-
-/* Oque é uma função?
- * um bloco de código que realiza uma tarefa específica e pode e chamado para ser executada;
- * Divideo cóigo em partes menores, tornando-o mais organizao e fácil de manter;
- * Permite reutilizar código em diferentes partes do programa sem precisar reescrever a mesmas intruções;
- * Parâmentros e Retorno: Pode receber dados de entrada (parâmetros) e retornar um resultado após a execução;
- * As variaáveis declaradas dentro de uma função são locais e não afetam o retante do programa;
+/* OQUE É UMA FUNÇÃO?
+        * um bloco de código que realiza uma tarefa específica e pode e chamado para ser executada;
+        * Divideo cóigo em partes menores, tornando-o mais organizao e fácil de manter;
+        * Permite reutilizar código em diferentes partes do programa sem precisar reescrever a mesmas intruções;
+        * Parâmentros e Retorno: Pode receber dados de entrada (parâmetros) e retornar um resultado após a execução;
+        * As variaáveis declaradas dentro de uma função são locais e não afetam o retante do programa;
  */
  
-/* Criando a primeira função
- * Normalmente uma função em java é definida com um tipo de retorno, um nome e pode ou não receber parâmetros;
- * A função pode ser criada sem parâmentros e sem retorno, ideal para tarefas simples que não requerem entrada ou saída;
- * Sitaxe básica: Consiste em um cabeçalho que incui o tipo de retorno (Void para sem retorno) e o corpo da função, onde o código é executado;
- * Chamando a função: A função é invocada pelo seu nome, e o código dentro dela é executado sempre que chamada;
+/* CRIANDO A PRIMENRA FUNÇÃO
+        * Normalmente uma função em java é definida com um tipo de retorno, um nome e pode ou não receber parâmetros;
+        * A função pode ser criada sem parâmentros e sem retorno, ideal para tarefas simples que não requerem entrada ou saída;
+        * Sitaxe básica: Consiste em um cabeçalho que incui o tipo de retorno (Void para sem retorno) e o corpo da função, onde o código é executado;
+        * Chamando a função: A função é invocada pelo seu nome, e o código dentro dela é executado sempre que chamada;
+        */
+
+/* DIFERENÇA ENTRE A FUNÇÃO MAIN E OUTRAS FUNÇÕES
+  * {FUNÇÃO MAIN}
+        * É o ponto de entrada do programa, onde a execução começa;
+        * Deve ter a assinatura exata public static void main(String[]args);
+        * Todo Programa java precisa de uma Função main para ser execuitado;
+  *  {OUTRAS FUNÇÕES}
+        * Criadas para dividir o código em partes menores e gerenciáveis;
+        * Podem ter diferentes tipos de retorno, nomes, e receber parâmetros;
+        * Podem ser chamadas várias vezes em diferentes partes do programa;
+        * São executadas apenas quando chamadas pelo código, ao contrário do main, que é eecutado automáticamente;
  */
-/*
- * Uso do return em Funções
- * Uma instrução que finlaiza a execução de uma função e opcionalmente, devolve um valor ao ponto onde a função foi chamada;
- * Finalização de função: quando o return é executado, a função para de executar, e o controle é devolvio ao chamador;
- * Tipo de Retorno: o return pode retornar valores de qualquer tipo, incluindo tipos primitivos, objetivos, ou nengum valor(void);
- * O returno permite que funções realizem cálculos ou operações e enviem o resultao de volta para ser utilizado em outras partes do programa;
- * 
- */
+/* ARGUMENTOS EM FUNÇÕES 
+        * Dados que você passa para uma função ao chamá-la, permitindo que a função processe informações específicas;
+        * Parâmentos são variáveis definidas na assinatura da função para receber os argumentos;
+        * Funções podem receber nenhum, um ou vários argumentos, dependendo da tarefa que realizam;
+        * Argumentos tonam as funções mais flexiveis e retilizavéis em diferentes contextos com dados diferentes;
+        * Tipos de Argumentos: Podem ser de qualquer tipo primitivo (int,double,ETC.) ou Objetos;
+*/
+
+/* USO DO RETURN EM FUNÇÕES
+        * Uma instrução que finlaiza a execução de uma função e opcionalmente, devolve um valor ao ponto onde a função foi chamada;
+        * Finalização de função: quando o return é executado, a função para de executar, e o controle é devolvio ao chamador;
+        * Tipo de Retorno: o return pode retornar valores de qualquer tipo, incluindo tipos primitivos, objetivos, ou nengum valor(void);
+        * O returno permite que funções realizem cálculos ou operações e enviem o resultao de volta para ser utilizado em outras partes do programa; 
+*/
+
 public class funcoes1 {
     public static void main(String[] args) {
         
