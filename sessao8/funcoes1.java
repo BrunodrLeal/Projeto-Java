@@ -35,9 +35,25 @@ package sessao8;
 
 /* USO DO RETURN EM FUNÇÕES
         * Uma instrução que finlaiza a execução de uma função e opcionalmente, devolve um valor ao ponto onde a função foi chamada;
-        * Finalização de função: quando o return é executado, a função para de executar, e o controle é devolvio ao chamador;
-        * Tipo de Retorno: o return pode retornar valores de qualquer tipo, incluindo tipos primitivos, objetivos, ou nengum valor(void);
+        * Finalização de função: quando o return é executado, a função para de executar, e o controle é devolvido ao chamador;
+        * Tipo de Retorno: o return pode retornar valores de qualquer tipo, incluindo tipos primitivos, objetos, ou nenhum valor(void);
         * O returno permite que funções realizem cálculos ou operações e enviem o resultao de volta para ser utilizado em outras partes do programa; 
+*/
+/* FUNÇÃO COM X SEM RETORNO.
+        * Fonções com retorno:
+        * 1 - Permitem que uma oepração seja realizada e seu resultado seja utilizado em outras partes do programa;
+        * 2 -  Cálculos, validções, e operações que produzem um resultado necessário para outras funções ou partes do código;
+        * 3 -  Exemplo: Calcular a soma de dois números e retonar o resultado para ser exibido ou usado em outro cálculo;
+/* FUNÇÃO SEM RETORNO
+        * 1 - Executam uma ação sem precisar devolver um resultado, ideal para tarefas como exibição de dados ou alterações diretas no estado do programa;
+        * 2 - Exibir mensagens: Modificar váriave globais, ou realizar operações que não requerem um retorno;
+        * 3 -  Exemplo: Exibir uma mensagem de boas vindas ou atualizar o valor de uma variável de controle;
+*/
+/*  ENCAPSULAMENTO RETORNO EM VARIÁVEL  
+        * O processo de armazenar o resultado de uma função em uma variável para uso posterior;
+        * Permite reutilizar o valor retornado por uma função em várias partes do código, aumentando a modularidade e a legibilidade;
+        * Uso Comum: Armazenar resultados de cálculos, verificações  ou operações complexas para evitar á mensma função;
+        * Encapsular o retorno em uma variável pode ajudar a simplificar o código e reduzir a necessidade de executar novamente a função;
 */
 
 public class funcoes1 {
@@ -93,27 +109,13 @@ public class funcoes1 {
 
     }
       public static int dobrar (int n) {
-        return n * 5;
+        return n * 20;
 
     }
-        /* Funções com X sem retorno.
-        * Fonções com retorno:
-        * 1 - Permitem que uma oepração seja realizada e seu resultado seja utilizado em outras partes do programa;
-        * 2 -  Cálculos, validções, e operações que produzem um resultado necessário para outras funções ou partes do código;
-        * 3 -  Exemplo: Calcular a soma de ddois números e retonar o resultado para ser exibido ou usado em outo cálculo;
-        */
-        /* Funções sem rotorno
-        * 1 - Executam uma ação sem precisar devolver um resultado, idela para tarefas como exibição de dados ou alterações iretas no estado do programa;
-        * 2 - Exibir mensagens, Modificar váriave globais, ou realizar operações que não requerem um retorno
-        * 3 -  Exemplo: exibir uma mensagem de boas vindas ou atualizar o valor de uma variável de controle;
-        */
+       
+        
 
-      /*  ENCAPSULAMENTO RETORNO EM VARIÁVEL  
-        * O processo de armazenar o resultado de uma função em uma variável para uso posterior;
-        * Permite reutilizar o valor retornado por uma função em várias partes do código, aumentando a modularidade e a legibilidade;
-        * Uso Comun: Armazenar resultados de cálculos, verificações  ou operações complexas para evitar á mensa função;
-        * Encapsular o retorno em uma variável pode ajudar a Simplificar o cóigo e reduzir a necessidade de executar novamente a função;
-      */
+      
 
        public static String verificarPar (int n) {
             if (n % 2 == 0 ) {
