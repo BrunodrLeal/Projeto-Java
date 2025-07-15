@@ -75,17 +75,23 @@ public class funcoes1 {
         soma(10, 20);  
         saudar("Bruno Leal");
         dobrar(4);
-        int numero = 10;
+        int numero = 15;
         int numeroDobrado = dobrar(numero); // chamando a função dobrar com o número 10
-        System.out.println("O número " + numero + " dobrado é: " + numeroDobrado);
+            System.out.println("O número " + numero + " dobrado é: " + numeroDobrado);
 
         System.out.println(dobrar(12));
         // 4 - retorno da variável
         int numeroVerificar = 8;
         String r1 = verificarPar(numero);
         String r2 = verificarPar(3);
+           
             System.out.println(r1);
+                
             System.out.println(r2);
+            
+            int  x = dobrar (soma3(2,4));
+
+            System.err.println(x);
         
     }
 
@@ -112,17 +118,15 @@ public class funcoes1 {
         return n * 20;
 
     }
-       
-        
-
-      
-
-       public static String verificarPar (int n) {
+       public static String verificarPar (int n) { /* encapsulamento */
             if (n % 2 == 0 ) {
                 return "o Numero " + n + " é par.";
             } else {
                 return "O numero " + n + " é impar.";  
             }
+    }
+     public static int soma3 (int a , int b) { //Int a + int B são os argumentos
+                return a + b;
        }   
        // Exemplos de encapsulamentos e retornos em variáveis
        public static int calcularQuadrado(int numero) {
