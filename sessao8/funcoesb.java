@@ -94,7 +94,7 @@ public class funcoesb {
      * Tratamento de erro: em cenários onde o programa não pode continuar devido a um erro crítico;
      * interrupção controlada: quando o programa atinge um estado em que deve ser encerrado imediatamente, como após confirmar a saída do usuário;
      */
-
+    
      public static void verificarAutenticação ( String usuario, String senha) {
 
         if(!usuario.equals("admin") || !senha.equals("senhaSegura")) {
@@ -139,6 +139,6 @@ public class funcoesb {
         System.out.println(a);
 
       }
-
+     
 }
     
