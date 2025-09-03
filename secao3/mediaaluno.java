@@ -1,19 +1,22 @@
 import java.util.Scanner;
+// Obter nome do aluno e 3 notas
+// Exibir mensagem com nome e média final
+// Bônus : Se a nota for maior ou igual a 7, imprimir Aprovao, se não: Reprovado
 
 public class mediaaluno {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String escola = "";
-        String nome = "";
+        String nome = ""; //vazia
+        String escola = ""; //vazia
 
-        while (!escola.equalsIgnoreCase("Y")) {
+        while (!nome.equalsIgnoreCase("Bruno")) {
             System.out.println("Qual o seu nome?");
             nome = scanner.nextLine();
 
             System.out.println("Olá " + nome + ", qual escola você estuda?");
             escola = scanner.nextLine();
 
-            if (!escola.equalsIgnoreCase("Y")) {
+            if (!escola.equalsIgnoreCase("Yolanda")) {
                 System.out.println(">>> A escola \"" + escola + "\" não é aceita.");
                 System.out.println(">>> Por favor, informe a escola correta (dica: começa com 'Y').\n");
             }
