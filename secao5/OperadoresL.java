@@ -65,7 +65,7 @@ public class OperadoresL {
     } else {
       System.out.println("Entrada negada.");
     }
-
+    
 
   }
 }
