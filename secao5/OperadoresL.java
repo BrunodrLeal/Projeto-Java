@@ -52,7 +52,7 @@ public class OperadoresL {
   boolean temGuardaChuva = false;
 
     System.out.println(estaChuvendo || temGuardaChuva);
-    System.out.println(10 > 20 && 100 == 200);
+    // System.out.println(10 > 20 && 100 == 200); // Linha removida para evitar código morto
 
     int idade2 = 16;
     boolean ehMembro = true;

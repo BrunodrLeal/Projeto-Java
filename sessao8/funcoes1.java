@@ -92,6 +92,7 @@ public class funcoes1 {
             int  x = dobrar (soma3(2,4));
 
             System.err.println(x);
+            System.out.println(numeroVerificar);
         
     }
 

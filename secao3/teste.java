@@ -12,7 +12,8 @@ public class teste {
         nome = scanner.nextLine();
 
         System.out.println("Qual o nome da escola? ");
-        
+        escola = scanner.nextLine();
+
         System.out.println("Digite a Primeira Nota: ");
         double nota1 = scanner.nextDouble(); 
         
@@ -21,12 +22,12 @@ public class teste {
         
         System.out.println("Digite a Terceira Nota: ");
         double nota3 = scanner.nextDouble(); 
-
         double media = (nota1 + nota2 + nota3) /3;
         System.out.println("Sua média foi " + media);
+        System.out.println("Aluno: " + nome + " | Escola: " + escola);
     
         scanner.close();
         }
 
     }
-
+    

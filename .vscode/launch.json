@@ -1,0 +1,161 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "CalculadoraIMC",
+            "request": "launch",
+            "mainClass": "CalculadoraIMC",
+            "projectName": "Projeto-Java_ca4e4e9c"
+        },
+        {
+            "type": "java",
+            "name": "Condicionais",
+            "request": "launch",
+            "mainClass": "Condicionais",
+            "projectName": "Projeto-Java_ca4e4e9c"
+        },
+        {
+            "type": "java",
+            "name": "ExerSwitch",
+            "request": "launch",
+            "mainClass": "ExerSwitch",
+            "projectName": "Projeto-Java_ca4e4e9c"
+        },
+        {
+            "type": "java",
+            "name": "Exercicio",
+            "request": "launch",
+            "mainClass": "Exercicio",
+            "projectName": "Projeto-Java_ca4e4e9c"
+        },
+        {
+            "type": "java",
+            "name": "produto",
+            "request": "launch",
+            "mainClass": "Exercicios.exe_produto.produto",
+            "projectName": "Projeto-Java_ca4e4e9c"
+        },
+        {
+            "type": "java",
+            "name": "Calculadora",
+            "request": "launch",
+            "mainClass": "Exercicios.testeCalculadora.Calculadora",
+            "projectName": "Projeto-Java_ca4e4e9c"
+        },
+        {
+            "type": "java",
+            "name": "OperadoresL",
+            "request": "launch",
+            "mainClass": "OperadoresL",
+            "projectName": "Projeto-Java_ca4e4e9c"
+        },
+        {
+            "type": "java",
+            "name": "estudosOr",
+            "request": "launch",
+            "mainClass": "estudosOr",
+            "projectName": "Projeto-Java_ca4e4e9c"
+        },
+        {
+            "type": "java",
+            "name": "if_else",
+            "request": "launch",
+            "mainClass": "if_else",
+            "projectName": "Projeto-Java_ca4e4e9c"
+        },
+        {
+            "type": "java",
+            "name": "mediaaluno",
+            "request": "launch",
+            "mainClass": "mediaaluno",
+            "projectName": "Projeto-Java_ca4e4e9c"
+        },
+        {
+            "type": "java",
+            "name": "HelloWorld",
+            "request": "launch",
+            "mainClass": "secao1.HelloWorld",
+            "projectName": "Projeto-Java_ca4e4e9c"
+        },
+        {
+            "type": "java",
+            "name": "exercicio",
+            "request": "launch",
+            "mainClass": "secao2.exercicio",
+            "projectName": "Projeto-Java_ca4e4e9c"
+        },
+        {
+            "type": "java",
+            "name": "scanner",
+            "request": "launch",
+            "mainClass": "secao2.scanner",
+            "projectName": "Projeto-Java_ca4e4e9c"
+        },
+        {
+            "type": "java",
+            "name": "variavel",
+            "request": "launch",
+            "mainClass": "secao2.variavel",
+            "projectName": "Projeto-Java_ca4e4e9c"
+        },
+        {
+            "type": "java",
+            "name": "Exercícios",
+            "request": "launch",
+            "mainClass": "sessao8.Exercícios",
+            "projectName": "Projeto-Java_ca4e4e9c"
+        },
+        {
+            "type": "java",
+            "name": "FuncoesBuiltIn",
+            "request": "launch",
+            "mainClass": "sessao8.FuncoesBuiltIn",
+            "projectName": "Projeto-Java_ca4e4e9c"
+        },
+        {
+            "type": "java",
+            "name": "funcoes1",
+            "request": "launch",
+            "mainClass": "sessao8.funcoes1",
+            "projectName": "Projeto-Java_ca4e4e9c"
+        },
+        {
+            "type": "java",
+            "name": "funcoesb",
+            "request": "launch",
+            "mainClass": "sessao8.funcoesb",
+            "projectName": "Projeto-Java_ca4e4e9c"
+        },
+        {
+            "type": "java",
+            "name": "swtich2",
+            "request": "launch",
+            "mainClass": "swtich2",
+            "projectName": "Projeto-Java_ca4e4e9c"
+        },
+        {
+            "type": "java",
+            "name": "tabuada",
+            "request": "launch",
+            "mainClass": "tabuada",
+            "projectName": "Projeto-Java_ca4e4e9c"
+        },
+        {
+            "type": "java",
+            "name": "tempCodeRunnerFile",
+            "request": "launch",
+            "mainClass": "tempCodeRunnerFile",
+            "projectName": "Projeto-Java_ca4e4e9c"
+        }
+    ]
+}

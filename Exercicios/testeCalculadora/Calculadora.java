@@ -27,5 +27,6 @@ public class Calculadora {
         else {
             System.out.println("Obesidade");
         }
+        scanner.close();
     }
 }

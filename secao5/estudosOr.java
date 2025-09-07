@@ -30,6 +30,7 @@ public class estudosOr {
                     System.out.println("Você está habilitado, pode entrar.");
                 }
  
+        scanner.close();
     } 
     
 }

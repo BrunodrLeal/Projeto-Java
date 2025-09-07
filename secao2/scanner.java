@@ -14,8 +14,9 @@ public class scanner {
 
         // restava o valor do terminal
         String nome = scanner.nextLine();   
+        System.out.println("Seu nome é: " + nome);
 
-
+        scanner.close(); // fecha o scanner
     }
 
 }

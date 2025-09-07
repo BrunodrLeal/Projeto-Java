@@ -18,6 +18,8 @@ public class if_else {
 
         int numero2 = 100;
             // baseado em uma comparação eu executo algo.
+        if (numero2 > 50) {
+            System.out.println("O numero é maior que 50");
         if (numero > 90 ) {
             System.out.println("o numero é menor que 100");
            
@@ -66,5 +68,6 @@ public class if_else {
         
    
 
+        }
+      }
     }
-}

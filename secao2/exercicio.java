@@ -10,7 +10,7 @@ public class exercicio {
     int valor2 = valor + 10;
 
     System.out.println("A primeira variável é " + valor + " O dobro do valor é: " + resultado);
-
+    System.out.println("A soma do valor mais 10 é: " + valor2);
      //seguno exercício
      //criar uma variavel char que armazene a letra "B" faça um casting explicito dessa variavel para int e eiba o valor númerico correspondente.
     char letra = 'B';
@@ -32,7 +32,8 @@ public class exercicio {
         
         long valorLong1 = 2_000_000_000L;
         int valorInt = (int) valorLong1;
-        System.out.println( "O Valor Long é: " + valorLong1);
+        System.out.println( "O Valor Long é: " + valorLong1 );
+        System.out.println("O valor convertido para int é: " + valorInt);
 
          //Concatenação de uma String de Olá Mundo em seja bem vindo ao Java!
 
