@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ExerSwitch",
+            "request": "launch",
+            "mainClass": "secao5.ExerSwitch",
+            "projectName": "Projeto-Java_ca4e4e9c"
+        },
+        {
+            "type": "java",
+            "name": "banhoZao",
+            "request": "launch",
+            "mainClass": "secao5.banhoZao",
+            "projectName": "Projeto-Java_ca4e4e9c"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"

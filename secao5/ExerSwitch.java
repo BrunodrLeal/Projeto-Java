@@ -1,3 +1,5 @@
+package secao5;
+
 import java.util.Scanner;
 
 public class ExerSwitch {
@@ -34,7 +36,6 @@ public class ExerSwitch {
             Thread.sleep(1000); // espera 1 segundos
 
         System.out.printf(" Olá %s, esse é os lanches disponíveis hoje no cardápio! %n", nome);
-            Thread.sleep(1000); // espera 1 segundos
 
         System.out.println(" X-Burger R$ 24,90");
         System.out.println(" X-Salada R$ 27,90");
