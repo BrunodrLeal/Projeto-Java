@@ -52,8 +52,8 @@ public class Condicionais
        */
       int n = 5;
       int m = 10;
-      System.out.println(n = 12); 
-      System.out.println(n);     
+      System.out.println(n = 12);
+      System.out.println(n);
       System.out.println( n == m);
 
       /* 4  - Comparação de Strings
@@ -63,7 +63,7 @@ public class Condicionais
        * USO DO MÉTODO EQUALS();
        * Equals() compara o conteúdo das Strings, caractere por caractere;
        * é a maneira correta  e segura de verificar se duas strings são iguais em valor;
-       * equalsIgnoreCase() 
+       * equalsIgnoreCase()
        * compara o conteúdo das Strings ignorando diferenças de maiúsculas e minúsculas;
        */
       String str1 = new String("Java");
@@ -72,5 +72,5 @@ public class Condicionais
       System.out.println(str1.equals(str2)); 
       System.out.println(str1.equalsIgnoreCase("java")); 
    }
-}    
+}
 

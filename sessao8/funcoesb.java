@@ -1,50 +1,51 @@
-package sessao8;
-
-
-
-public class funcoesb {  
+public class funcoesb {
      // Escopo Global
-     static int globalVar = 20;       
+     static int globalVar = 10;
     
     public static void main(String[] args) {
           
-               /* FUNÇÔES COM IF?ELSE E CONICIONAIS COMPLEXAS
-             * Estruturas de controle if/else dentro de funções permitem tomar decisões complexas baseadas em muíltiplas condições;
-             * Condicionais Complexas: permintem cobinar múltiplas condições usando operadores lógicos (&&,||) e comparações para determinar o fluxo de execução;
-             * USO COMUM: Verificações de múltiplos critérios, tomadas de decisão em processos complexos e validações de entradas de usuário;
-             * Funções com If/Else organizam e centralizam a lógica de decisão, tornando o código mais modular e fácil de manter;
-             */
+    /* FUNÇÔES COM IF?ELSE E CONICIONAIS COMPLEXAS
+    * Estruturas de controle if/else dentro de funções permitem tomar decisões complexas baseadas em muíltiplas condições;
+    * Condicionais Complexas: permintem cobinar múltiplas condições usando operadores lógicos (&&,||) e comparações para determinar o fluxo de execução;
+    * USO COMUM: Verificações de múltiplos critérios, tomadas de decisão em processos complexos e validações de entradas de usuário;
+    * Funções com If/Else organizam e centralizam a lógica de decisão, tornando o código mais modular e fácil de manter;
+    */
 
-             String r1 = verificarAcesso(20, true, false);
-             String r2 = verificarAcesso(17, true, false);
-             String r3 = verificarAcesso(21, false,true);
-             System.out.println(r1);
-             System.out.println(r2);
-             System.out.println(r3);
+    String r1 = verificarAcesso(20, true, false);
+    String r2 = verificarAcesso(17, true, false);
+    String r3 = verificarAcesso(21, false,true);
+    System.out.println(r1);
+    System.out.println(r2);
+    System.out.println(r3);
                 
-                 //funçai com Switch
-             System.out.println(obterDiaDaSemana(7));
+                 // Funçao com Switch
+    System.out.println(obterDiaDaSemana(6));
 
-                 // 7 system exit
-                 verificarAutenticação("admin" ,  "senhaSegura");
-                 System.out.println("oi");
-                 System.out.println(calcularMedia(5, 6, 7));
+                 // 7 System exit
+    verificarAutenticação("admin" ,  "senhaSegura");
+    
+    System.out.println("oi");
+   
+    System.out.println(calcularMedia(5, 6, 7));
 
                      //Documentação JAVADOC
             calcularMedia(5, 6, 7);
 
-                     int localVar = 100;
+                     int localVar = 1;
             if(true) {
                 System.out.println(localVar);
             }
-            System.out.println(localVar);
+            System.out.println(globalVar);
+            int testeFuEscopo =  escopoLocal(localVar);
+        
         // main method ends here
-    } 
+        
+    }
 
     // Moved methods outside main, inside class
 
     public static String verificarAcesso (
-        int idade, 
+        int idade,
         boolean temCarteira,
         boolean temHistoricoNegativo) {
             
@@ -67,7 +68,7 @@ public class funcoesb {
     */
     public static String obterDiaDaSemana(int dia) {
         switch (dia) {
-            case 1: 
+            case 1:
                 return "Domingo";
             case 2:
                 return "Segunda-feira";
@@ -100,9 +101,9 @@ public class funcoesb {
         if(!usuario.equals("admin") || !senha.equals("senhaSegura")) {
             System.out.println("Autenticação Falhou!");
             System.exit(1);
-        }
+        } else {
         System.out.println("Autenticação bem-sucedida!");
-
+        }
      }
      
      /* 8- Documentação Funções
@@ -134,9 +135,13 @@ public class funcoesb {
        * Escopo de Parâmetro: Parâmetros de função são tratados como variáveis lcoais dentor do escopo da função;
        * Encapsulamento: o escopo ajuda a proteger variáveis e métodos de acesos indesejados fora do seu contexto apropriado; 
        */
-      public static void escopolocal (int a ){
+      public static int escopoLocal (int a ){
         System.out.println(globalVar);
         System.out.println(a);
+
+        int testeFuncao =1;
+        return testeFuncao;
+
 
       }
      

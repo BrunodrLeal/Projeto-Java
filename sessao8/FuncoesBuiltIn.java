@@ -1,10 +1,7 @@
-package sessao8;
-
 public class FuncoesBuiltIn {
     public static void main(String[] args) {
-        //10- Exemplo de funções built-in em Java
-
-         /* O que são Funções  Built-in em java?
+    
+    /* O que são Funções  Built-in em java?
        * São funções já icorporadas na linguagem Java que fornece funcionalidades comuns e essenciais. Elas são prontas para uo e não precisam ser definidas pelo programador;
        * Estão disponíveis automáticamente sem ncessidad de importação ou definição ;
        * para que servem: Manipulação de Strings, operações matemáticas, converão de dados, entre outras funcionalidades;
@@ -18,18 +15,19 @@ public class FuncoesBuiltIn {
        * prática.
        */
         
+        //10- Exemplo de funções built-in em Java
         String frase = "Java é uma linguagem de programação poderosa.";
 
         //lebght
-            System.out.println(frase.length());
+        System.out.println(frase.length());
 
         // int => inteiro
         // String => S => letra mauiscula inicial => classe
-            System.out.println(frase.substring(0,19));
-
-            System.out.println(frase.replace("a", "e"));
-        String fraseModificada = frase.toUpperCase();
-        System.out.println(fraseModificada.toLowerCase());
+        System.out.println(frase.substring(0,10)); // somente uma parte da string marcada.
+        System.out.println(frase.replace("a", "e")); // troca todas as letras a pela e. podendo ser modificado como quiser.
+        System.out.println(frase.toUpperCase()); // deixa toda a string maiuscula.
+        String fraseModificada = frase.toUpperCase(); // variavel com a letra maiuscula. pode ser utilizada normalmente
+        System.out.println(fraseModificada);
 
     /* Funções Built-in de Número (Math)
      * Math.sqrt(double a): Calcula a Raiz quadrada de um Número;
@@ -43,6 +41,7 @@ public class FuncoesBuiltIn {
     System.out.println(Math.sqrt(9)); // 9 elevado à potência 2
     System.err.println(Math.pow(2, 3)); // 2 elevado à potência 3
     System.out.println(Math.abs(-10)); // Valor absoluto de -10
+    System.out.println(Math.abs(10));
     System.out.println(Math.max(10, 20));
     System.out.println(Math.max(100, 10)); // Retorna o maior entre 20 e 30 
 
@@ -50,5 +49,5 @@ public class FuncoesBuiltIn {
     System.out.println("Raiz quadrada de 99: " + raizQuadrada);
 
 
-}
+  }
 }

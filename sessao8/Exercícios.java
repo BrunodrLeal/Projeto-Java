@@ -1,19 +1,17 @@
-    package sessao8;
-
-    public class Exercícios {
-        /* Exercício 1: 
+public class Exercícios {
+        /* Exercício 1:
             * Função para Converter Temperatura
             * Crie uma função que converta uma temperatura de Celcius para Fahrenheit.
             * a função deve receber a temperatura de Celcuis com Argumento e retornar o valor correspondente em Fahrenheit.
             * Exiba o resutlado encapsulado em uma Variável.
         */
-        /* Exercício 2 : 
+        /* Exercício 2 :
             *Função que calcule o fatorial de um número inteiro
-            *teste a função com um número de sua escolha     
-            */ 
+            *teste a função com um número de sua escolha
+            */
         /* Exercício 3
             *Crie uma função que receba um número inteiro e retorne uma string indicando se o númro é "par" ou "impar". Us conicional if-else para determinar a paridade.  
-            */    
+            */
         
     
         public static void main(String[] args) {
