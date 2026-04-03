@@ -33,11 +33,14 @@ public class Lista {
     // somar todos os elementos de um array
     // acessar os elementos e codensar a soma deles em uma var.
     int soma  = 0;
+
+    // length = > A quantidade de elementos de um array
     int i = 0;
     for(i = 0; i < 8; i++ ){
         
         // 1 = 0 ; i > 1; i > 2.... na estrutura. 
-        //soma +=  numeros[i];
+        // numeros [i] = numeros [0] => 1
+        soma +=  numeros[i];
     }
     System.out.println("soma dos elementos: "+ soma);
 
@@ -60,23 +63,30 @@ public class Lista {
 
     while (j < valores.length){
 
-        if (valores[j] < maiorValor){
+        if (valores[j] > maiorValor){
             maiorValor = valores[j];
         }
         j++;
     }
-    System.out.println(maiorValor);
+    System.out.println("o MAIOR VALOR É : " +   maiorValor);
 
     String nome = "Bruno dos Reis Leal";
     System.out.println(nome.replace(" ", "").length());
-    
-
      
     // 3 - for each
 
     for (int numero : numeros) {
         System.out.println("o Numero é: "+ numero);
     }
+
+     String[] palavras = {"Java", "é", "bom!"};
+
+    String frase = ""; // cria uma String vazia. 
+
+    for (String palavra: palavras) {
+        frase += palavra + " ";
+    }
+    System.out.println(frase);
     // verificar se valor está presente em array
 
     char letraProcurada = 'f';
@@ -87,6 +97,16 @@ public class Lista {
             break;
         }
     }
+    String procurado = "bastião";
+    String[] pessoas= { "Bruno", "Evelin" , "Luna" , "Alice"};
+    for ( String pessoa:pessoas) {
+        if (pessoa.equals( procurado))
+        System.out.println("Achei o Homi " + pessoa);
+        else if(pessoa.equals("Evelin")){
+            System.out.println("Nome errado. ");
+        }
+    }
+
 
     // 4 - loops com if
 
@@ -113,11 +133,22 @@ public class Lista {
             System.out.println("Valor maior que o limite: "+ nums[t]);
         }
     }
+    String[] linguagens = {"Java", "C", "Python", "php"};
+    String linguagemAlvo = "Python";
+    for (String palavra : linguagens) {
+        if(linguagemAlvo == palavra) {
+            System.out.println("Linguagem encontrada! parando o Loop!");
+            break;
+        } else {
+            System.out.println("Linguagem ainda não encontrada!");
+        }
+    }
+
 
     // 5  -  Atualizar valores em um array
 
     for (int u = 0; u < numeros.length; u++) {
-        numeros[u] *= 1;
+        numeros[u] *= 2;
 
     }
     System.out.println(numeros[1]);
