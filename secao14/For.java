@@ -2,15 +2,23 @@ package secao14;
 
 public class For {
     public static void main(String[] args) {
-        int[] array = {10, 20, 30, 40, 50};
-        for (int i = 0; i < array.length; i++) {
-    System.out.println(array[i]);
-}
-int[] numeros = {10, 20, 30, 40};
+        // exerc 1: 
 
-for (int n: numeros) {
-    System.out.println(n);
-}
+        int[] numero = {1,2,3};
+        int[] arrayInvertido = new int[numero.length];
+
+        for(int i = 0; i < numero.length; i++) {
+            arrayInvertido[i] = numero[numero.length - 1 - i];
+        }
+
+        System.out.println("Array original: " + java.util.Arrays.toString(numero));
+        System.out.println("Array invertido: " + java.util.Arrays.toString(arrayInvertido));
+        
+
+        // exerc 2:
+
+        String[] palavras = {"java", "python", "c++","Bruno", "java", "conter-Strike", "c", "java"};
+        
 }
     
     

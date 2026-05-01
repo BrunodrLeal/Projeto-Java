@@ -1,10 +1,13 @@
-import java.util.Scanner;
 // Obter nome do aluno e 3 notas
 // Exibir mensagem com nome e média final
 // Bônus : Se a nota for maior ou igual a 7, imprimir Aprovao, se não: Reprovado
+import java.util.Scanner;
+import java.lang.System;
 
 public class mediaaluno {
+    
     public static void main(String[] args) {
+        
         Scanner scanner = new Scanner(System.in);
         String nome = ""; //vazia
         String escola = ""; //vazia
