@@ -4,6 +4,8 @@ package secao14;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import exercicios.exe_produto.Cliente;
+
 public class BancoBruno {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
