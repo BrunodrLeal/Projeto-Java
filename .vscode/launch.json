@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Teste2",
+            "request": "launch",
+            "mainClass": "secao15.Teste2",
+            "projectName": "Projeto-Java_1f32c7ae"
+        },
+        {
+            "type": "java",
+            "name": "testeJava",
+            "request": "launch",
+            "mainClass": "secao15.testeJava",
+            "projectName": "Projeto-Java_1f32c7ae"
+        },
+        {
+            "type": "java",
+            "name": "JogoDaForca",
+            "request": "launch",
+            "mainClass": "secao15.JogoDaForca",
+            "projectName": "Projeto-Java_1f32c7ae"
+        },
+        {
+            "type": "java",
             "name": "main",
             "request": "launch",
             "mainClass": "secao14.main",

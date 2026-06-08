@@ -54,7 +54,39 @@ import java.util.Arrays;
             int[] numeros = new int[5];
 
             System.out.println(Arrays.toString(numeros));
+
+            Arrays.fill(numeros, 5); // essa função preenche todo o array com o mesmo numero.
+
+            System.out.println(Arrays.toString(numeros));
+
+            // transformando de Array para Stream
+
+            int[] values = {1,2,3,4,5};
+
+            // Somando de outra forma.
+            int sum = Arrays.stream(values).sum();
+
+            System.out.println(sum);
+
+            // Arrays dinamicos.
+
+            ArrayList<String>frutas = new ArrayList<>();
+
+            System.out.println(frutas);
+
+            frutas.add("maça");
+            frutas.add("Banana");
             
+            System.out.println(frutas);
+
+            frutas.remove(1);
+
+            System.out.println(frutas);
+
+            String frutaespecifica = frutas.get(0); // esse motodo tira o objeto do Array
+                
+            System.out.println(frutaespecifica);
+
         }
     }
 
