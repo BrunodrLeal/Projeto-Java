@@ -6,27 +6,6 @@
     "configurations": [
         {
             "type": "java",
-            "name": "VerificadorForcaSenha",
-            "request": "launch",
-            "mainClass": "secao15.VerificadorForcaSenha",
-            "projectName": "Projeto-Java_90ac1021"
-        },
-        {
-            "type": "java",
-            "name": "Teste2",
-            "request": "launch",
-            "mainClass": "secao15.Teste2",
-            "projectName": "Projeto-Java_90ac1021"
-        },
-        {
-            "type": "java",
-            "name": "JogoDaForca",
-            "request": "launch",
-            "mainClass": "secao15.JogoDaForca",
-            "projectName": "Projeto-Java_90ac1021"
-        },
-        {
-            "type": "java",
             "name": "Teste2",
             "request": "launch",
             "mainClass": "secao15.Teste2",
