@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Aluno",
+            "request": "launch",
+            "mainClass": "pratica1.Aluno",
+            "projectName": "Projeto-Java_90ac1021"
+        },
+        {
+            "type": "java",
+            "name": "Lista",
+            "request": "launch",
+            "mainClass": "secao14.Lista",
+            "projectName": "Projeto-Java_90ac1021"
+        },
+        {
+            "type": "java",
+            "name": "Basico",
+            "request": "launch",
+            "mainClass": "pratica1.Basico",
+            "projectName": "Projeto-Java_90ac1021"
+        },
+        {
+            "type": "java",
+            "name": "basico",
+            "request": "launch",
+            "mainClass": "pratica1.basico",
+            "projectName": "Projeto-Java_90ac1021"
+        },
+        {
+            "type": "java",
             "name": "VerificadorForcaSenha",
             "request": "launch",
             "mainClass": "secao15.VerificadorForcaSenha",
