@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FuncoesBuiltIn",
+            "request": "launch",
+            "mainClass": "FuncoesBuiltIn",
+            "projectName": "Projeto-Java_1f32c7ae"
+        },
+        {
+            "type": "java",
+            "name": "Pratica2",
+            "request": "launch",
+            "mainClass": "pratica1.Pratica2",
+            "projectName": "Projeto-Java_1f32c7ae"
+        },
+        {
+            "type": "java",
+            "name": "Aluno",
+            "request": "launch",
+            "mainClass": "pratica1.Aluno",
+            "projectName": "Projeto-Java_1f32c7ae"
+        },
+        {
+            "type": "java",
+            "name": "Compra",
+            "request": "launch",
+            "mainClass": "pratica1.Compra",
+            "projectName": "Projeto-Java_1f32c7ae"
+        },
+        {
+            "type": "java",
             "name": "Aluno",
             "request": "launch",
             "mainClass": "pratica1.Aluno",
