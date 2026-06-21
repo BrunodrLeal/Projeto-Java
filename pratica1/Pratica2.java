@@ -95,14 +95,15 @@ public class Pratica2 {
             System.out.println("5 - Excluir aluno:");
             System.out.println("0 - Sair:");
             int escolha = sc.nextInt();
+            sc.nextLine(); //limpa o enter
+
             if(escolha == 1){
-                // Cadastro.
+                // Cadastro;
                 System.out.println("Sistema de cadastramento:");
-                sc.nextLine();
                 System.out.println("Digite o nome completo:");
                     String nomeCompleto = sc.nextLine();
                     Nome.add(nomeCompleto);
-
+                //endereço completo um adicional parao exercício quero ver como a impressão dos dados vai funcionar. 
                 System.out.println("Endereço Completo:");   
                     String enderecoCompleto = sc.nextLine();
                     Endereco.add(enderecoCompleto);
@@ -135,47 +136,68 @@ public class Pratica2 {
             }
             //
             else if(escolha == 2){
-                // listar aluno
-               System.out.println("Digite o nome do aluno: ");
-                String nome = sc.nextLine();
-                    if(nome.equals(nome.contains(nome)));{
-                        System.out.println("Aluno encontrado.");
-                    }
-                    System.out.println("ALuno não encontrado.");
-                    }   
-            }
+                // listar aluno;
+                for(String nome : Nome){
 
-            else if(escolha == 3){
-                // pesquisar aluno
-                System.out.println("Digite o nome do aluno: ");
-                    String nomePesquisado = sc.nextLine();
-                    
-                    for(String nome : Nome){
-                    int posicao = Nome.indexOf(nomePesquisado);
-                        System.out.println(nome + " / " + Endereco.get(posicao) 
+                int posicao = Nome.indexOf(nome);
+                    System.out.println(nome + " / " 
+                        + Endereco.get(posicao) + " / "
                         + Cidade.get(posicao) + " / "
                         + Estado.get(posicao)+ " / "
                         + País.get(posicao)+ " / "
                         + Escola.get(posicao)+ " / "
                         + Materia.get(posicao)+ " / "
-                        + Nota.get(posicao)
+                        + Nota.get(posicao) + "."
+                    );
+            }
+        }
+            
+            else if(escolha == 3){
+                // pesquisar aluno;
+               System.out.println("Digite o nome do aluno: ");
+                String nomeDigitado = sc.nextLine();
+               
+                if(Nome.contains(nomeDigitado)){
+                    System.out.println("Aluno encontrado.");
+                
+                    int posicao = Nome.indexOf(nomeDigitado);
+
+                    System.out.println(nomeDigitado + " / " 
+                        + Endereco.get(posicao) + " / "
+                        + Cidade.get(posicao) + " / "
+                        + Estado.get(posicao)+ " / "
+                        + País.get(posicao)+ " / "
+                        + Escola.get(posicao)+ " / "
+                        + Materia.get(posicao)+ " / "
+                        + Nota.get(posicao) + "."
                     );
                 }
-                
+                else {
+                    System.out.println("Aluno não encontrado.");
+                }
+            }    
             
             else if(escolha == 4){
+            // Calcular média;
 
+            double soma = 0;
+            for(double nota: Nota){
+                soma+= Nota.size();
             }
-            
-            else if(escolha == 5){
+            double media = soma / Nota.size();
 
+            System.out.println("A média da turma é: " + media);
+            
+            }
+            else if(escolha == 5){
+            // Excluir aluno;
             }
             
             else if(escolha == 0){
                 System.out.println("Cadastro finalizado.");
                 break;
             }
-            
+            // opção invalida para cobrir erros do usuário;
             else{
                 System.out.println("Opção Invalida.");
             }
