@@ -18,12 +18,12 @@ public class Basico {
         //numeroZero(sc);   
         //array10(sc);
         //cincoNomes(sc);
-        paresImpares(sc);
+        //paresImpares(sc);
         sc.close();
 }
     
     public static void Dados(Scanner sc){
-       
+       // Exercício 1 Variaveis, Scanner e if.
         System.out.println("Qual o seu nome?");
             String texto = sc.nextLine();
 
@@ -32,15 +32,15 @@ public class Basico {
             sc.nextLine();
         
         if(idade < 18){
-            System.out.println("Menor de idade");
+            System.out.println("Nome: " + texto + ". Idade: "+ idade + " = Menor de idade.");
         }else{
-            System.out.println("Maioridade");
+            System.out.println("Nome: " + texto + ". Idade: "+ idade + " = Maioridade.");
         }
 
         sc.close();
         }
     public static void doisNumeros(Scanner sc){
-
+        // Exercício 2
         System.out.println("Escreva um numero?");
         int numero1 = sc.nextInt();
 
@@ -58,7 +58,7 @@ public class Basico {
         sc.close();
     }
     public static void Nota(Scanner sc){
-
+        // Exercício 3
         System.out.println("Uma nota de 0 a 100: ");
         int nota = sc.nextInt();
         sc.nextLine();
@@ -74,7 +74,7 @@ public class Basico {
         }
     }
     public static void Laço(Scanner sc){
-
+        // Exercício 4
         int somaPares = 0;
         int somaImpares = 0;
         int numero3 = 0;
@@ -100,7 +100,7 @@ public class Basico {
             
     }
     public static void Tabuada(Scanner sc){
-
+        // Exercício 5
     int tabuada = 10;
     int resultado= 0;
 
@@ -113,8 +113,7 @@ public class Basico {
     
 }
     public static int fatorial(int numero){ 
-    
-
+    // Exercício 6
     if(numero == 0 || numero == 1) {
         return 1;
     } else{
@@ -122,6 +121,7 @@ public class Basico {
     }
     }
     public static void numeroZero (Scanner sc){
+        // Exercício 7
         ArrayList<Integer> vezes = new ArrayList<>();
         int soma = 0;
         int contador = 0;
@@ -153,7 +153,7 @@ public class Basico {
         }
     }
     public static void array10(Scanner sc){
-        
+            // Exercício 8
         int[] numeros = {15, 3, 27, -2, 8, 99, 14, 0, 7, 42};
         int i = 0;
         int maiorValor = numeros[0];
@@ -174,7 +174,7 @@ public class Basico {
           System.out.println("O menor valor é : "+ menorValor);
     }
     public static void cincoNomes(Scanner sc){
-        
+        // Exercício 9
         String[] nomes = new String[5];
         int quant = 0;
 
@@ -188,7 +188,7 @@ public class Basico {
             
         }
     public static void paresImpares(Scanner sc){
-         
+         // Exercício 10
         int[] numeros = new int[10];
         int somaPares = 0;
         int somaImpares = 0;

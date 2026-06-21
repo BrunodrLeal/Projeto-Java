@@ -3,6 +3,7 @@ import java.util.*;
 
 class Compra{
     public static void main(String[] args) {
+        // Exercício 12
         Scanner sc = new Scanner(System.in);
         ArrayList<String> produto = new ArrayList<>();
         

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Basico",
+            "request": "launch",
+            "mainClass": "pratica1.Basico",
+            "projectName": "Projeto-Java_1f32c7ae"
+        },
+        {
+            "type": "java",
             "name": "FuncoesBuiltIn",
             "request": "launch",
             "mainClass": "FuncoesBuiltIn",
