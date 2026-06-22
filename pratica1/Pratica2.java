@@ -91,9 +91,9 @@ public class Pratica2 {
             System.out.println("1 - Cadastrar:"); // pronto
             System.out.println("2 - Listar:"); // pronto
             System.out.println("3 - Pesquisar aluno:");// pronto
-            System.out.println("4 - Calcular Média:");
-            System.out.println("5 - Excluir aluno:");
-            System.out.println("0 - Sair:");
+            System.out.println("4 - Calcular Média:");// pronto
+            System.out.println("5 - Excluir aluno:");// pronto
+            System.out.println("0 - Sair:"); // Sair
             int escolha = sc.nextInt();
             sc.nextLine(); //limpa o enter
 
@@ -180,17 +180,35 @@ public class Pratica2 {
             else if(escolha == 4){
             // Calcular média;
 
-            double soma = 0;
-            for(double nota: Nota){
-                soma+= Nota.size();
-            }
-            double media = soma / Nota.size();
+                double soma = 0;
+                for(double nota: Nota){
+                    soma += nota;
+                }
+                double media = soma / Nota.size();
 
-            System.out.println("A média da turma é: " + media);
+                System.out.println("A média da turma é: " + media);
             
             }
             else if(escolha == 5){
             // Excluir aluno;
+            System.out.println("Digite o nome do aluno para exclusão: ");
+            String alunoExcluido = sc.nextLine();
+
+                int posicaoExcluido = Nome.indexOf(alunoExcluido);
+                if(posicaoExcluido != -1){
+                    Nome.remove(posicaoExcluido);
+                    Endereco.remove(posicaoExcluido);
+                    Cidade.remove(posicaoExcluido);
+                    Estado.remove(posicaoExcluido);
+                    País.remove(posicaoExcluido);
+                    Escola.remove(posicaoExcluido);
+                    Materia.remove(posicaoExcluido);
+                    Nota.remove(posicaoExcluido);
+
+                    System.out.println("Aluno removido!");
+                } else{
+                    System.out.println("Aluno não encontrado. ");
+                }
             }
             
             else if(escolha == 0){
