@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Pessoa",
+            "request": "launch",
+            "mainClass": "secao17.Pessoa",
+            "projectName": "Projeto-Java_1f32c7ae"
+        },
+        {
+            "type": "java",
+            "name": "POO",
+            "request": "launch",
+            "mainClass": "secao17.POO",
+            "projectName": "Projeto-Java_1f32c7ae"
+        },
+        {
+            "type": "java",
             "name": "Biblioteca",
             "request": "launch",
             "mainClass": "pratica1.Biblioteca",
