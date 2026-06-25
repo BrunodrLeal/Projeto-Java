@@ -5,13 +5,28 @@ class Aluno{
     int idade;
     double nota1;
     double nota2;
-}
 
+    void Listar(){
+        System.out.println("Lista:");
+        System.out.println("Nome: " + nome);
+        System.out.println("Idade: " + idade);
+        System.out.println("Nota 1: " + nota1);
+        System.out.println("Nota 2: " + nota2);
+    }
+    void Buscar(){
+        
+    }
+
+    }
 public class Escola {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
-         int condicao = 1;
-         ArrayList<Aluno> aluno = new ArrayList<>();
+        int condicao = 1;
+        
+        ArrayList<Aluno> aluno = new ArrayList<>();
+        
+        Aluno novoAluno = cadastrarAluno(sc);
+        alunos.add(novoAluno);
 
         while (condicao < 2) {
             System.out.println(" === Sistema Escolar JAVA === ");
@@ -47,10 +62,21 @@ public class Escola {
         
     }
     public static void cadastrarAluno(Scanner sc){
-        System.out.println("Digite o nome do aluno");
+        System.out.println("Nome:");
         String nome = sc.nextLine();
-        aluno.add(nome);
+
+        System.out.println("Idade:");
+        int idade = sc.nextInt();
+
+        System.out.println("Nota 1:");
+        double nota1 = sc.nextDouble();
+
+        System.out.println("Nota 2:");
+        double nota2 = sc.nextDouble();
+        sc.nextLine();
+        
     }
+    
     public static void listarAluno(){
 
     }
