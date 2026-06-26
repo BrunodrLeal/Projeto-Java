@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CaixaEletronico",
+            "request": "launch",
+            "mainClass": "POO.CaixaEletronico",
+            "projectName": "Projeto-Java_1f32c7ae"
+        },
+        {
+            "type": "java",
+            "name": "Exerc",
+            "request": "launch",
+            "mainClass": "POO.Exerc",
+            "projectName": "Projeto-Java_1f32c7ae"
+        },
+        {
+            "type": "java",
             "name": "Pessoa",
             "request": "launch",
             "mainClass": "secao17.Pessoa",

@@ -45,6 +45,35 @@ public static void main(String[] args) {
     joao.setIdade(39);
 
     System.out.println("O João tem a idade de : " + joao.getIdade());
-}
+
+    // 5 Setters e Getters
+
+    ContaBancaria ContaDaAna = new ContaBancaria();
+
+    ContaDaAna.settitular("Ana");
+
+    ContaDaAna.setSaldo(1000);
+
+    ContaDaAna.ExibirConta();
+
+    // criar um exercício que crie um metodo que exiba os dois dados das classes.
+    // consegui realizar o exercício com sucesso. 
+
+        System.out.println(ContaDaAna.getTitular());
+    System.out.println(ContaDaAna.getSaldo());
+
+    // 6 -  Logica em get e set.
+
+    Produto camisa = new Produto();
+    camisa.setNome("Camisa regata");
+    camisa.setPreco(29.9999999);
+
+    System.out.println(camisa.getPreco());
+    
+    // 7 - metodos dentro de método;
+    System.out.println(camisa.getProdutoInfo());
+
+    camisa.aplicarDesconto(10);
+    }
     
 }
