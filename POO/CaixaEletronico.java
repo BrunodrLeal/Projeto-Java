@@ -6,7 +6,6 @@ public class CaixaEletronico {
         Scanner sc = new Scanner(System.in);
         ArrayList<ContaBancariaP> contas = new ArrayList<>();
         
-
         while (true) {
             System.out.println("1 - Cadastrar usuário.");
             System.out.println("2 - Saldo Bancário.");
@@ -23,9 +22,9 @@ public class CaixaEletronico {
                     cadastro.setConta();
 
                     System.out.println("Valor a ser depositado: ");
-                    double saldo = sc.nextDouble();
+                    double saldoDepositado = sc.nextDouble();
                     sc.nextLine(); // limpa o enter;
-                    cadastro.setSaldo(saldo);
+                    cadastro.setSaldo(saldoDepositado);
 
                     contas.add(cadastro);
                     break;
@@ -39,7 +38,8 @@ public class CaixaEletronico {
                             String pesquisaUsuario = sc.nextLine();
                             for(ContaBancariaP conta : contas){
                                 if(conta.getUsuario().equalsIgnoreCase(pesquisaUsuario)){
-                                    System.out.printf("Usuário: %s%n Saldo: R$ %.3f\n", conta.getUsuario(), conta.getSaldo());
+                                    System.out.printf("Usuário: %s%n Saldo: R$ %.2f%n Número da conta: ",
+                                     conta.getUsuario(), conta.getSaldo(), conta.getConta() );
                                    
                                 }
                             }
@@ -49,7 +49,8 @@ public class CaixaEletronico {
                             sc.nextLine();
                                 for(ContaBancariaP conta : contas){
                                     if(conta.getConta() == pesquisaConta){
-                                    System.out.printf("Usuário: %s%n Saldo: R$ %.3f%n", conta.getUsuario(), conta.getSaldo());
+                                    System.out.printf("Usuário: %s%n Saldo: R$ %.2f%n Número da conta: ", 
+                                    conta.getUsuario(), conta.getSaldo(), conta.getConta() );
                                     }
                                 }
                         } else {
@@ -59,7 +60,31 @@ public class CaixaEletronico {
                     break;
                 
                 case 3:
-                    
+                    System.out.println("Digite o número da conta a pagar: ");
+                    int contaTransferencia = sc.nextInt();
+                    sc.nextLine();
+                    for(ContaBancariaP conta : contas){
+                            
+                        if(contaTransferencia != conta.getConta()){
+                                System.out.println("Conta Inválida.");
+                            } else {
+
+                                System.out.println("Conta encontrada: "+ conta.getUsuario() + " Saldo: R$"
+                                + conta.getSaldo());
+                                System.out.println("Digite a conta para transferência: ");
+
+                                int contaPagamento = sc.nextInt();
+                                sc.nextLine();
+                                
+                                    if(contaPagamento != conta.getConta()){
+                                        System.out.println("Conta Inválida.");
+                                    } else {
+                                        System.out.println("Conta encontrada: "+ conta.getUsuario() + " Saldo: R$" 
+                                        + conta.getSaldo());
+                                    }
+                            }
+                        }                      
+
                     break;
             
                 default:

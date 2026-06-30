@@ -64,16 +64,28 @@ public static void main(String[] args) {
 
     // 6 -  Logica em get e set.
 
-    Produto camisa = new Produto();
-    camisa.setNome("Camisa regata");
-    camisa.setPreco(29.9999999);
+    //Produto camisa = new //Produto();
+    //camisa.setNome("Camisa regata");
+    //camisa.setPreco(29.9999999);
 
-    System.out.println(camisa.getPreco());
+    //System.out.println(camisa.getPreco());
     
     // 7 - metodos dentro de método;
-    System.out.println(camisa.getProdutoInfo());
+    //System.out.println(camisa.getProdutoInfo());
 
-    camisa.aplicarDesconto(10);
+    //camisa.aplicarDesconto(10);
+
+    // 8 construtores
+
+    Livro meuLivro =  new Livro("Harry Potter" ,  "J K Rowlling", 31.90);
+
+    meuLivro.exibirInfo();
+
+    Livro meuLivro2 =  new Livro();
+
+    meuLivro2.exibirInfo();
+    
     }
+    
     
 }

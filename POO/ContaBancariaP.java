@@ -4,7 +4,7 @@ public class ContaBancariaP {
     
     private String usuario;
     private int conta;
-    private static int contadorContas = 1;
+    private static int contadorContas;
     private double saldo;
     private double transferencia;
 
@@ -19,11 +19,19 @@ public class ContaBancariaP {
         }
     }
     public void setConta(){
+
         this.conta = contadorContas;
         contadorContas++;
+        System.out.println("Antes: " + contadorContas);
+
+        this.conta = contadorContas;
+
+        contadorContas++;
+
+        System.out.println("Depois: " + contadorContas);
     }
     public void setSaldo(double saldo){
-        if(saldo < 0 && saldo >= 1000000){
+        if(saldo > 0 && saldo < 1000000){
 
             this.saldo = saldo;
         }
@@ -31,6 +39,7 @@ public class ContaBancariaP {
 
     public void setTransferencia(double transferencia){
         this.transferencia = transferencia;
+
     }
 
     public String getUsuario(){
@@ -40,8 +49,10 @@ public class ContaBancariaP {
         return conta;
     }
     public double getSaldo(){
+
         return saldo;
     }
+    
     public double getTransgerencia(){
         return transferencia;
     }

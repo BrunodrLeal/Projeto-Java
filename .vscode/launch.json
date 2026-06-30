@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Pricipal",
+            "request": "launch",
+            "mainClass": "ExePoo.Pricipal",
+            "projectName": "Projeto-Java_1f32c7ae"
+        },
+        {
+            "type": "java",
+            "name": "Celular1",
+            "request": "launch",
+            "mainClass": "ExePoo.Celular1",
+            "projectName": "Projeto-Java_1f32c7ae"
+        },
+        {
+            "type": "java",
+            "name": "Celular",
+            "request": "launch",
+            "mainClass": "ExePoo.Celular",
+            "projectName": "Projeto-Java_1f32c7ae"
+        },
+        {
+            "type": "java",
             "name": "CaixaEletronico",
             "request": "launch",
             "mainClass": "POO.CaixaEletronico",
