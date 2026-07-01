@@ -2,32 +2,43 @@ package ExePoo;
 
 public class LivroBiblioteca {
     
-    private String titulo;
-    private String autor;
-    private boolean disponivel;
-
-    public void LivroBiblioteca(String titulo, String autor,boolean disponivel){
-        this.titulo = "Harry Potter e a camera secreta";
-        this.autor =  "J K Rowlling";
-        
+    private String titulo = "Harry Potter e a camera secreta.";
+    private String autor = "J K Rownling";
+    private boolean disponivel = true;
+    
+    public void setTitulo(String titulo){
+        this.titulo = titulo;
     }
-    public void setDisponivel(){
-        if(disponivel == false){
-            System.out.println("Livro pode ser empresato!");
-        } else  {
-            System.out.println("Livro devolvido!");
-        
+    public void setAutor(String autor){
+        this.autor = autor;
+    }
+    public void setDisponivel(boolean disponivel){
+        this.disponivel = disponivel;
+    }
+    public String getTitulo(){
+        return titulo;
+    }
+    public String getAutor(){
+        return autor;
+    }
+    public boolean  getDisponivel(){
+        return disponivel; 
+    }
+    public void emprestar(){
+        if(getDisponivel()){
+            System.out.println("Livro emprestado pra você "+ titulo + ", Autor: "+ autor);
+            setDisponivel(false);
+        } else {
+            System.out.println("Livro já está emprestado.");
         }
     }
-    
-    public void setOcupado(){
-       if(disponivel == true){
-            System.out.println("Livro devolvido!");
+    public void devolver(){
+        if(!getDisponivel()){
+            System.out.println("Livro devolvido "+ titulo + ", Autor: "+ autor);
+            setDisponivel(true);
         } else {
-            System.out.println("Livro pode ser emprestado!");
-        } 
-            
+            System.out.println("O livro já está disponível.");
+        }
     }
-    
-
+       
 }

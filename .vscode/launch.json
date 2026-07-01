@@ -9,6 +9,13 @@
             "name": "Biblioteca",
             "request": "launch",
             "mainClass": "ExePoo.Biblioteca",
+            "projectName": "Projeto-Java_90ac1021"
+        },
+        {
+            "type": "java",
+            "name": "Biblioteca",
+            "request": "launch",
+            "mainClass": "ExePoo.Biblioteca",
             "projectName": "Projeto-Java_1f32c7ae"
         },
         {
