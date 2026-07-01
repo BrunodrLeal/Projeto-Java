@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Biblioteca",
+            "request": "launch",
+            "mainClass": "ExePoo.Biblioteca",
+            "projectName": "Projeto-Java_1f32c7ae"
+        },
+        {
+            "type": "java",
             "name": "Pricipal",
             "request": "launch",
             "mainClass": "ExePoo.Pricipal",
