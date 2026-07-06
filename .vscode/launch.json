@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SimuladorLoteria",
+            "request": "launch",
+            "mainClass": "secao18.SimuladorLoteria",
+            "projectName": "Projeto-Java_90ac1021"
+        },
+        {
+            "type": "java",
+            "name": "Bilhete",
+            "request": "launch",
+            "mainClass": "secao18.Bilhete",
+            "projectName": "Projeto-Java_90ac1021"
+        },
+        {
+            "type": "java",
+            "name": "SimuladorBilheteria",
+            "request": "launch",
+            "mainClass": "secao18.SimuladorBilheteria",
+            "projectName": "Projeto-Java_90ac1021"
+        },
+        {
+            "type": "java",
+            "name": "Calcimc",
+            "request": "launch",
+            "mainClass": "Calcimc",
+            "projectName": "Projeto-Java_90ac1021"
+        },
+        {
+            "type": "java",
+            "name": "Loteria",
+            "request": "launch",
+            "mainClass": "ExerPOO.Loteria",
+            "projectName": "Projeto-Java_90ac1021"
+        },
+        {
+            "type": "java",
+            "name": "POO2",
+            "request": "launch",
+            "mainClass": "secao17.POO2",
+            "projectName": "Projeto-Java_90ac1021"
+        },
+        {
+            "type": "java",
             "name": "Biblioteca",
             "request": "launch",
             "mainClass": "ExePoo.Biblioteca",
