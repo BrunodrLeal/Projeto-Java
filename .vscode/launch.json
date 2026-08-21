@@ -6,6 +6,76 @@
     "configurations": [
         {
             "type": "java",
+            "name": "POO",
+            "request": "launch",
+            "mainClass": "src.secao20.POO",
+            "projectName": "Projeto-Java_90ac1021"
+        },
+        {
+            "type": "java",
+            "name": "POO",
+            "request": "launch",
+            "mainClass": "POO",
+            "projectName": "Projeto-Java_90ac1021"
+        },
+        {
+            "type": "java",
+            "name": "POO",
+            "request": "launch",
+            "mainClass": "secao20.POO",
+            "projectName": "Projeto-Java_90ac1021"
+        },
+        {
+            "type": "java",
+            "name": "POO",
+            "request": "launch",
+            "mainClass": "sessao20.POO",
+            "projectName": "Projeto-Java_90ac1021"
+        },
+        {
+            "type": "java",
+            "name": "Menu",
+            "request": "launch",
+            "mainClass": "loja.Menu",
+            "projectName": "Projeto-Java_90ac1021"
+        },
+        {
+            "type": "java",
+            "name": "exercicio",
+            "request": "launch",
+            "mainClass": "exercicio.exercicio",
+            "projectName": "Projeto-Java_90ac1021"
+        },
+        {
+            "type": "java",
+            "name": "exercicios",
+            "request": "launch",
+            "mainClass": "exercicio.exercicios",
+            "projectName": "Projeto-Java_90ac1021"
+        },
+        {
+            "type": "java",
+            "name": "Exercicios",
+            "request": "launch",
+            "mainClass": "Exercicios.Exercicios",
+            "projectName": "Projeto-Java_90ac1021"
+        },
+        {
+            "type": "java",
+            "name": "POO",
+            "request": "launch",
+            "mainClass": "secao17.POO",
+            "projectName": "Projeto-Java_90ac1021"
+        },
+        {
+            "type": "java",
+            "name": "SistemaCadastroAlunos",
+            "request": "launch",
+            "mainClass": "secao19_CadastroAlunos.SistemaCadastroAlunos",
+            "projectName": "Projeto-Java_90ac1021"
+        },
+        {
+            "type": "java",
             "name": "SimuladorLoteria",
             "request": "launch",
             "mainClass": "secao18.SimuladorLoteria",
