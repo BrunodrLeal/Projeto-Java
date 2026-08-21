@@ -8,6 +8,13 @@
             "type": "java",
             "name": "POO",
             "request": "launch",
+            "mainClass": "secao20.POO",
+            "projectName": "ProjetoJava_25c07fd0"
+        },
+        {
+            "type": "java",
+            "name": "POO",
+            "request": "launch",
             "mainClass": "src.secao20.POO",
             "projectName": "Projeto-Java_90ac1021"
         },
