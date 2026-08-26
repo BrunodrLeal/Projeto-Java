@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Erros",
+            "request": "launch",
+            "mainClass": "secao21.Erros",
+            "projectName": "ProjetoJava_25c07fd0"
+        },
+        {
+            "type": "java",
+            "name": "POO2",
+            "request": "launch",
+            "mainClass": "secao20.Avancando.POO2",
+            "projectName": "ProjetoJava_25c07fd0"
+        },
+        {
+            "type": "java",
+            "name": "POO",
+            "request": "launch",
+            "mainClass": "secao20.Exercicios.POO",
+            "projectName": "ProjetoJava_25c07fd0"
+        },
+        {
+            "type": "java",
+            "name": "POO",
+            "request": "launch",
+            "mainClass": "secao21.POO",
+            "projectName": "ProjetoJava_25c07fd0"
+        },
+        {
+            "type": "java",
             "name": "POO",
             "request": "launch",
             "mainClass": "secao20.POO",

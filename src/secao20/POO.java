@@ -100,5 +100,7 @@ public class POO {
         violino.exibirDetalhes();
 
         violino.tocar();
+
+        
      }
 }

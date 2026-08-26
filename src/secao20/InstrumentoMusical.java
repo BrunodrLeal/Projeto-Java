@@ -1,5 +1,6 @@
 package secao20;
 
+// não tem herança
 abstract  class InstrumentoMusical {
     
     protected String nome;
