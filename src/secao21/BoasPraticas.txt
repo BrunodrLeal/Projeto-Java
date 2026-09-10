@@ -1,0 +1,15 @@
+Boas práticas
+
+° use exceções de forma adequada: Não abuse de exceções para controle de fluco normal do programa;
+
+° Especifique o tipo de exceção: Capture exceções especificas sempre que possível, evitando capturar a exceção genérica Exception.
+
+° Trate exceções localmente: trate a exceção no ponto mais próximo onde o erro pode ser recuperado;
+
+° Limpeza de recursos: Use Finalli para garantir que recursos sejam liberados corretamente;
+
+° Encapsule exceções internas: utilize encadeamento de exceções para presercar a causa original;
+
+° Evite exceções sienciosas: Não capture exceções sem fornecer uma mensagem de log ou saída apropriada;
+
+°Lance exceções específicas: Crie exceções customizadas quando necessário para representar melhor os erros de domínio;

@@ -1,122 +1,230 @@
 package secao21;
 
 import java.io.*;
-
 public class Erros {
+
     public static void main(String[] args) {
         
-        // 1  =  try catch
-
+        // 1 - try catch
         try {
-            
+
             int a = 0;
             int b = 10;
 
             int resultado = b / a;
 
-        } catch (ArithmeticException e)  {
+        } catch(ArithmeticException e) {
+
             System.out.println("Divisão por 0 não é possível.");
+
         }
 
         try {
             
-            int [] numeros = { 1,2,3};
+            int[] numeros = {1,2,3};
 
             System.out.println(numeros[3]);
 
-        } catch (Exception e) {
-            // TODO: handle exception
-
+        } catch (Exception error) {
+            
             System.out.println("Erro genérico");
 
-            System.out.println("msg: " + e.getMessage());
+            System.out.println("Msg: " + error.getMessage());
+
         }
 
-        // Excessão e o erro. 
+        // Excessão e o erro => para o mesmo fim
 
-        // 2 - Bloco Finally
-
-        // nesse exemplo o erro é presente e o finally é executado.
+        // 2 - finally
         try {
             
-            int [] numeros = { 1,2,3};
+            int[] numeros = {1,2,3};
 
             System.out.println(numeros[3]);
 
-        } catch (ArrayIndexOutOfBoundsException e) {
-            // TODO: handle exception
+        } catch (ArrayIndexOutOfBoundsException error) {
+            
+            System.out.println("Erro genérico finally");
 
-            System.out.println("Erro genérico");
+            System.out.println("Msg: " + error.getMessage());
 
-            System.out.println("msg: " + e.getMessage());
         } finally {
             System.out.println("Executou o finally");
-        }
+        }  
         
-        // esse exemplo ele mostra como é quando funcionao o Try catch e o finally sempre executa.
         try {
             
-            int [] numeros = { 1,2,3};
+            int[] numeros = {1,2,3};
 
             System.out.println("Acessando indice existente: " + numeros[2]);
 
-        } catch (ArrayIndexOutOfBoundsException e) {
-            // TODO: handle exception
+        } catch (ArrayIndexOutOfBoundsException error) {
+            
+            System.out.println("Erro genérico finally");
 
-            System.out.println("Erro genérico");
+            System.out.println("Msg: " + error.getMessage());
 
-            System.out.println("msg: " + e.getMessage());
         } finally {
             System.out.println("Executou o finally");
-        }
+        }   
 
-        // try sem catch tambem o finally sempre vai executar
         try {
             
-            int [] numeros = { 1,2,3};
+            int[] numeros = {1,2,3};
 
-            System.out.println("Acessando indice existente: " + numeros[2]);
+            System.out.println("Acessando indice sem catch: " + numeros[2]);
 
         } finally {
             System.out.println("Executou o finally");
-        }
+        }  
 
-        // 3 - Verificadas e não verificadas. 
+        // 3 - verificadas e nao verificadas
 
         // verificada
 
         try {
-            BufferedReader reader =  new BufferedReader(new FileReader("arquivo.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader("arquivo.txt"));
             String linha = reader.readLine();
             System.out.println(linha);
         } catch (Exception e) {
-            // TODO: handle exception
-            System.out.println("Erro ao ler arquivo " + e.getMessage());
+            System.out.println("Erro ao ler arquivo: " + e.getMessage());
         }
 
-        // Não verificadas.
+        // não verificadas
         String texto = null;
 
-        //System.out.println(texto.length());
-            
-        // execução do exemplo 4
-        try {
+        // System.out.println(texto.length());
+
+        // 4 - exceções com throw
+
+        try {   
 
             validarIdade(20);
-            validarIdade(10);
             
+            validarIdade(10);
+
         } catch (Exception e) {
-            System.out.println("Erro " + e.getMessage());
+            System.out.println("Erro: " + e.getMessage());
         }
-        }   
+         
 
-        // 4 -  class throwable
+        // 5 - exceções customizadas
 
-        public static void validarIdade(int idade) {
-            if(idade < 18) {
-                throw  new IllegalArgumentException("Idade deve ser maior que 18.");
+        Banco minhaConta = new Banco(5000);
+
+        try {
+            
+            minhaConta.sacar(6000);
+
+        } catch (Exception e) {
+           
+            System.out.println("Erro: " + e.getMessage());
+
+        }
+
+        // throws em metódos
+
+        try {
+            processarArquivo("/var/www/arquivo.txt");
+        } catch (FileNotFoundException e) {
+            
+            System.out.println("Erro: " + e.getMessage());
+        }   catch (IOException e) {
+            System.out.println("Erro: " + e.getMessage());
+        }
+
+        // 7  -  Encadeamento de exceções
+        try {
+            abrirArquivo(null);
+        } catch (Exception e) {
+
+            System.out.println("Mensagem: "+ e.getMessage());
+
+             System.out.println("Causa Original: "+ e.getCause());
+        }
+        // 8 - multicatch
+        
+        try {
+            
+            processarArquivo("asd");
+            
+        } catch (NullPointerException | IOException e) {
+            
+            System.out.println("Erro multicatch: " + e.getMessage());
+
+        }
+
+        // 9 - relançar as exceções
+        try {
+            processarDados(null);
+
+        } catch (Exception e) {
+
+            System.out.println(" outra coisa....");
+
+            System.out.println("Mensagem: " + e.getMessage());
+
+            System.out.println("pilha de execução: " + e.getStackTrace());
+        }
+
+    }
+    public static void validarIdade(int idade) {
+
+        if(idade < 18) {
+            throw new IllegalArgumentException("Idade deve ser maior que 18.");
+        }
+
+        System.out.println("Idade válida :" + idade);
+
+    }
+
+    
+
+    public static void processarArquivo(String caminho) throws FileNotFoundException, IOException {
+
+        if(caminho == null  || caminho.isEmpty()) {
+            throw new IOException("Caminho inválido.");
+        }
+
+        File arquivo = new File(caminho);
+
+        if(!arquivo.exists()){
+            throw new FileNotFoundException("Arquivo não encontrado.");
+            
+        }
+        System.out.println("Arquivo encontrado com sucesso. ");
+    }
+
+    public static void abrirArquivo(String caminho) {
+        try {
+            
+            if(caminho == null){
+                throw new NullPointerException("Caminnho nulo");
             }
-            System.out.println("Idade válida :" + idade);
-        }    
-}
+            
+            throw  new FileNotFoundException("Arquivo não encontrado");
 
+        } catch (FileNotFoundException e) {
+
+            NullPointerException npe = new NullPointerException("Erro ao processar arquivo");
+            
+            npe.initCause(e);
+
+            throw npe;
+
+        }
+    }
+
+    public static void processarDados(String dados) throws Exception {
+        try {
+            if(dados == null) {
+                throw  new NullPointerException("Os dados são nulos. ");
+            }
+        } catch (Exception e) {
+
+            System.out.println("Tratamento, criação de log, .....");
+            throw e;
+        }
+    }
+
+}
