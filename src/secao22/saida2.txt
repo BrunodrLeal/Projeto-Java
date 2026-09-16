@@ -1,0 +1,3 @@
+Escrevendo em Arquivo em BufferedWrite
+Escrevendo em Arquivo em BufferedWrite 2
+Testando

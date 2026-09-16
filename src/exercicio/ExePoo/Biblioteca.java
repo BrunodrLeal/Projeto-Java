@@ -1,4 +1,4 @@
-package SRC.exercicio.ExePoo;
+package exercicio.ExePoo;
 
 public class Biblioteca {
     public static void main(String[] args) {

@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Bruno",
+            "request": "launch",
+            "mainClass": "secao22.Bruno",
+            "projectName": "ProjetoJava_25c07fd0"
+        },
+        {
+            "type": "java",
+            "name": "Arquivo",
+            "request": "launch",
+            "mainClass": "secao22.Arquivo",
+            "projectName": "ProjetoJava_25c07fd0"
+        },
+        {
+            "type": "java",
             "name": "Erros",
             "request": "launch",
             "mainClass": "secao21.Erros",

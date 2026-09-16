@@ -1,4 +1,4 @@
-package SRC.exercicio.pratica1;
+package exercicio.pratica1;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package SRC.exercicio;
+package exercicio;
 
 class exercicio {
     
