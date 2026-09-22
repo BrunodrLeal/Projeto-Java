@@ -1,0 +1,23 @@
+// Collections
+
+°Collections são estruturas de dados que permitem armazenar, organizar e manipular grupos de objetos em Java;
+° A Java Collections Framework oferece uma biblioteca padrão para manipulação de coleções de dados como listas, conjuntos e mapas;
+° Principaos interfaces:
+    ° List: uma coleção ordenada de lementos que pode conter duplicatas(ex: ArrayList);
+    ° Set:  Uma coleção que não permite elementos duplicados(ex: HashSet);
+    ° Map: Uma coleção de pares chave-valor, onde as chaves são únicas(ex: HashMap);
+
+° Componentes Importantes:
+    ° Iteradores: Permitem navegar pelo elementos de uma coleção de forma segura e eficiente;
+    ° Métodos utilitários: Como sort, reversem e shuffle, facilitam operações comuns em coleções;
+OBS: veremos alguns emeplos com Collections, e possivelmente teremos uma seção de Collections no Curso =)
+
+Generalkes com coleções Collections
+
+° General que são amplamente utilizados nas coleções do Java , Como list , Set, Map, Para garantir segurança de tipos e evitar erros em tempos de execução ;
+° Os anos de Genérrices em coleções é possível especificar o tipo de objetos que uma coleção pode armazenar virgula tornando o código mais previsivo e seguro;
+° Coleções genéricas evitam a necessidade de casting explícito ao recuperar elementos e permitem que o compilador verifique se os tipos de dados inseridos são consistentes;
+° Principais coleções genéricas :
+    °List<T>: Armazena uma lista ordenada do elemento do tipo T;
+    ° Set<T>: Armazena uma coleção de elementos únicos do tipo T:
+    ° Map<K , V>: Armazena pares chave-valor, onde K é o tipo da chave e V é o tipo do valor;

@@ -1,0 +1,20 @@
+O que sao Generics?
+
+° Generics são uma funcionadade de permite criar classe, interfaces e métodos que operam com tipos de dados parametrizados;
+
+° Introduzidos no Java 5 O generics ajudam As criar código mais flexível e reutilizável , Sem a necessidade de definir tipos de dados específicos ;
+
+° Objetivo : permite que a estrutura de dados ou métodos trabalhe com diferentes tipos de dados proporcionando segurança de tipos durante a compilação; 
+
+° Generics Evitam o uso excessivo de castings E garante Que tipos incorretos não sejam atribuídos a coleções ou métodos;
+
+° Usados amplamente em classes de coleções como list ,set e map garantindo que os elementos armazenados sejam o tipo correto;
+
+° Benefícios 
+
+ ° Segurança de tipos Esses Erros e tipos são detectados em tempos de compilação;
+ 
+ ° Reutilização de código : Um código genérico pode ser usado para diferentes tipos sem duplicação ;
+
+Legibilidade : O código se torna mais claro e previsível ao definir explicitamente o tipo de 
+

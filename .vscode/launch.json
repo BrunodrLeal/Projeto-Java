@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Generics",
+            "request": "launch",
+            "mainClass": "secao23.Generics",
+            "projectName": "ProjetoJava_25c07fd0"
+        },
+        {
+            "type": "java",
             "name": "Bruno",
             "request": "launch",
             "mainClass": "secao22.Bruno",
